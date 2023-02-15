@@ -5,11 +5,11 @@ import { UpdateNinjaDto } from './dto/update-ninja.dto';
 @Injectable()
 export class NinjasService {
   private ninjas = [
-    { id: 0, name: 'ninjaA', weapon: 'starts' },
+    { id: 0, name: 'ninjaA', weapon: 'stars' },
     { id: 0, name: 'ninjaB', weapon: 'nunchucks' },
   ];
 
-  getNinjas(weapon?: 'starts' | 'nunchucks') {
+  getNinjas(weapon?: 'stars' | 'nunchucks') {
     if (weapon) {
       return this.ninjas.filter((ninja) => {
         return ninja.weapon === weapon;
